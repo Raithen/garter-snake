@@ -48,6 +48,7 @@ class Card:
         return f"{self.value} of {self.suit}"
 
 deck = Deck()
+print(deck)
 print(deck.cards)
 deck.shuffle()
 print(deck.cards)
@@ -55,3 +56,5 @@ card = deck.deal_card()
 print(card)
 hand = deck.deal_hand(5)
 print(hand)
+print(deck)
+deck.shuffle()
